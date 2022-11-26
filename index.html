@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sber-Cats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "wrapper">
+        <header>
+            <a href="" class ="logo">SBerCats</a>
+            <script src="https://kit.fontawesome.com/5cf2b57e4c.js" crossorigin="anonymous"></script>
+            <nav>
+                <a href="" class = "button" id ="updatebtn">Изменить котика</a>
+                <a href="" class = "button" id ="add">Добавить котика</a>
+            </nav>
+        </header>
+        <main>
+        </main>
+        <footer>@2022 FD Sber-Cats</footer>
+    </div>
+    <div class="popup-wrapper">
+        <!-- <div class="popup"> 
+            <div class="popup__close">
+                 <i class="fa-solid fa-xmark"></i> 
+                <div class="popup__content">   
+                </div>
+            </div>
+        </div> -->
+        <div class="popup"> 
+            <div class="popup__close">
+                 <i class="fa-solid fa-xmark"></i></div>
+                 <div class="popup__content">  
+                    <h2>Добавить котика</h2>
+                    <form id = "addform">
+                        <input type="text" name="name"  placeholder="Имя котика" required>
+                        <input type="number" name="id" placeholder="id" required>
+                        <input type="text" name="img_link" placeholder="Ссылка на картинку">
+                        <input type="number" name="age" placeholder="Возраст" min = "0">
+                        <input type="number" name="rate" placeholder="Рейтинг" min="0" max="10">
+                        <label for = "fav"><input type="checkbox" name ="favourite">Любимчик</label>
+                        <textarea name="discription" id = "discription" placeholder="Описание"></textarea>
+                        <button type="submit" id="">Добавить</button>
+                    </form> 
+                </div>
+        </div> 
+    </div>
+    <div class ="upd">
+        <div class = "upd__gui">
+        <div class="upd__close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+            <div class="upd__content">
+                <h2>Изменить котика</h2>
+                <form id = "updform">
+                <input type="number" name="id" placeholder="Ведите id котика, которого хотите изменить" required>
+                <input type="text" name="name"  placeholder="Введите новое имя котика">
+                <input type="text" name="img_link" placeholder="Введите ссылку на картинку">
+                <input type="number" name="age" placeholder="Введите новый возраст" min = "0">
+                <input type="number" name="rate" placeholder="Каков его новый рейтинг" min="0" max="10">
+                <label for = "fav"><input type="checkbox" name ="favourite">Любимчик</label>
+                <textarea name="discription" placeholder="Новое описание"></textarea>
+                <button type="submit" id="">Сохранить изменения</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
